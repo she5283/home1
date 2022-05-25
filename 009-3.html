@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* box model
+                박스의 너비 계산
+                -content-box : 내용이 너비
+                -border-box : 내용 + 패딩 + 보더까지가 너비
+             */
+            box-sizing: border-box;
+            width: 300px;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+        #first{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">A</div>
+    <div id="seconde">B</div>
+</body>
+</html>
