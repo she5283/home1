@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic 태그</title>
+    <style>
+        #page{
+            width: 800px;
+            margin: 0 auto;
+        }
+        header{
+            height: 50px;
+            background-color: yellow;
+        }
+        nav{
+            height: 50px;
+            background-color: aqua;
+        }
+        footer{
+            height: 50px;
+            background-color: blueviolet;
+        }
+        aside{
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            float: left;
+        }
+        section{
+            min-height: 400px;
+            width: 600px;
+            background-color: lightblue;
+            float: right;
+        }
+        #main{
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <header>로고</header>
+        <nav>사이트 메인 메뉴</nav>
+        <!-- 
+            float을 이용해 좌, 우 배치
+            그 부모 div에 overflow:hidden
+         -->
+        <div id="main">
+            <aside>부가 정보</aside>
+            <section>메인 정보</section>
+        </div>
+        <footer>회사 정보</footer>
+    </div>
+</body>
+
+</html>

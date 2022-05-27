@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            선택자(selector) : css에서 html 요소를 선택하는 방법
+            tag 선택자                                  1(우선순위)
+            class 선택자 : 분류명으로 여러개를 선택      10(우선순위)
+            id 선택자 : 이름으로 하나를 선택            100(우선순위)
+        */
+        th{
+            color: red;
+        }
+        .u{
+            text-decoration: underline;
+        }
+        .italic{
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="u italic">제목1</th>
+                <th>제목2</th>
+                <th class="u">제목3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
