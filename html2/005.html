@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 요소들</title>
+    <style>
+        input{
+            width: 200px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://www.naver.com">
+        <!-- name을 설정하지않으면 정보가 넘어가지 않는다. -->
+        <input type="text" name="user_id" id="user_id" maxlength="10" placeholder="아이디를 입력하세요"><br>
+        <input type="password" name="password" id="password" maxlength="10" placeholder="비밀번호를 입력하세요"><br>
+        <!-- 
+            name은 서버에서 부르는 이름
+            id는 css에서 부르는 이름
+         -->
+        <button>클릭하세요</button>
+        <!-- <input type="file">파일 -->
+        <!-- <input type="button" value="클릭하세요">버튼 -->
+    </form>
+</body>
+</html>
