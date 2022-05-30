@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 레이아웃 속성 flex</title>
+    <style>
+        .child{
+            width: 300px;
+            height: 100px;
+        }
+        .parent{
+            height: 100vh;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    /* 주축 방향 정렬 */
+            align-items: center;       /* 반대축 방향 정렬 */
+        }
+        /* 
+            flex 방식은 두개의 축이 생성된다(main 축, cross 축)
+            - main 축 : 자식들의 정렬 방향
+            - cross 축 : 정렬방향과 반대
+        */
+        .box1{background-color: red;}
+        .box2{background-color: green;}
+        .box3{background-color: violet;}
+        .box4{background-color: fuchsia;}
+        .box5{background-color: lightblue;}
+    </style>
+</head>
+<body>
+    <!-- div.parent>div.child.box${$}*5 이런식으로 빠르게 작성 가능 -->
+    <div class="parent">
+        <div class="child box1">1</div>
+        <div class="child box2">2</div>
+        <div class="child box3">3</div>
+        <div class="child box4">4</div>
+        <div class="child box5">5</div>
+    </div>
+</body>
+</html>

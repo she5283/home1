@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3단 레이아웃</title>
+    <style>
+        #page{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        header, nav, footer{
+            border: 1px solid red;
+            height: 50px;
+        }
+        aside{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+        section{
+            min-height: 600px;
+            width: 600px;
+            background-color: deeppink;
+        }
+        #main{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>semantic 태그를 이용한 레이아웃</h1>
+    <p>header, nav, footer, section, article, aside</p>
+    <hr>
+    <div id="page">
+        <header>
+        </header>
+        <nav>
+        </nav>
+            <div id="main">
+                <aside></aside>
+                <section></section>
+                <aside></aside>
+            </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
