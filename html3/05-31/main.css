@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* 브라우저의 기본 css를 날려버리자 -- reset */
+*{
+    margin:0;
+    padding:0;
+}
+#page{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 내가 원하는 폰트, 대체 폰트, 기본 폰트 */
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#header{
+    border: 1px solid blue;
+    height: 48px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+#header>div {
+    display: flex;
+    align-items: center;
+}
+#header>div>a, #header>div>i {
+    padding: 10px;
+}
+#header .fa-th{
+    cursor: pointer;
+}
+#header .link_button{
+    background-color: #1a73e8;
+    color:white;
+    width: 96px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    text-align:center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#logo{
+    text-align: center;
+}
+#search{
+    height: 140px;
+    border: 1px solid orange;
+}
+#search_input input {
+    width: 580px;
+    height: 46px;
+    border-radius: 23px;
+    border : 1px solid rgb(223,225,229);
+}
+#search_input {
+    width: 580px;
+    position: relative;
+}
+#search .fa-search {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+#search #search_input_div_right_icon {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+/* #search의 자식인 div, 2개 중 첫번째 */
+#search>div:first-of-type {
+    display: flex;
+    justify-content: center;
+}
+#search_botton{
+    text-align: center;
+    padding: 20px;
+}
+#footer{
+    height: 100px;
+    border: 1px solid green;
+    background-color: #eee;
+}
+#footer_upper {
+    display: block;
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 30px;
+}
+#footer_lower {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    height: 48px;
+    align-items: center;
+}
+#footer_lower>div>a {
+    padding: 10px;
+}
+.link {
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.black {
+    color:black;
+}
+.grey {
+    color: #70757a;
+}
